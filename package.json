@@ -1,0 +1,30 @@
+{
+  "name": "node-practice",
+  "version": "1.0.0",
+  "description": "Practicing using project",
+  "keywords": [
+    "Node",
+    "JS",
+    "Express",
+    "Console"
+  ],
+  "homepage": "https://github.com/RitobrotoMukherjee/Node-BE-practice#readme",
+  "bugs": {
+    "url": "https://github.com/RitobrotoMukherjee/Node-BE-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitobrotoMukherjee/Node-BE-practice.git"
+  },
+  "license": "MIT",
+  "author": "Ritobroto Mukherjee",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "chat": "node consoleChatAppUsingEventEmitter.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@types/node": "^25.0.7"
+  }
+}
