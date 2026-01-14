@@ -2,12 +2,16 @@
 
 # Node JS Practice
 
-> Learn Node JS with discrete micro projects
+> Learn Node JS with discrete micro projects.
 
+# Set-Up
+
+> Run `npm i` to install dependencies on each directories which has `package.json` in it.
 
 ## Built With
 
 - Node JS
+- NPM
 - Express
 - Terminal
 
