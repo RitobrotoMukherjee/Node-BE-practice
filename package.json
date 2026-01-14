@@ -21,8 +21,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "chat": "node consoleChatAppUsingEventEmitter.js",
-    "start": "node index.js"
+    "start-chat": "node index.js"
   },
   "dependencies": {
     "@types/node": "^25.0.7"
