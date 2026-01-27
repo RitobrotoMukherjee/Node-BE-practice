@@ -40,14 +40,12 @@ module.exports = http.createServer((req, res) => {
                 const LAST_ID = dataInJson.reduce((acc, current) => current.id > acc ? current.id : acc, 0);
                 jsonData['id'] = LAST_ID + 1
                 dataInJson.push(jsonData);
-                console.log('Received data:', dataInJson);
+
+                // console.log('Received data:', dataInJson);
                 fs.writeFileSync('./data.json', JSON.stringify(dataInJson));
-               
-                res.writeHead(200);
-                res.end(JSON.stringify({ message: 'Data received', data: jsonData }));
+                res.writeHead(200).end(JSON.stringify({ message: 'Data received', data: jsonData }));
             } catch (error) {
-                res.writeHead(400);
-                res.end(JSON.stringify({ message: 'Invalid JSON' }));
+                res.writeHead(400).end(JSON.stringify({ message: 'Invalid JSON' }));
             }
         });
         
